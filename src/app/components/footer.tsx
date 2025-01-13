@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/footer.module.css";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { BiX } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
@@ -50,7 +51,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a href="https://x.com" target="_blank">
-              <BiX />
+              <FaXTwitter />
             </a>
             <a href="https://linkedin.com" target="_blank">
               <FaLinkedin />
