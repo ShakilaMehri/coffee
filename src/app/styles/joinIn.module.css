@@ -1,0 +1,46 @@
+.joinIn {
+    padding: 40px 20px;
+    background-image: url(/images/bg-joinin1.jpg);
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f7c08a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d89a5e;
+}
