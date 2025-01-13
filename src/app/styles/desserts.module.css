@@ -1,0 +1,113 @@
+.desserts {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dessertGrid {
+    display: grid;
+    overflow-x: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.dessertCard {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.dessertCard:hover {
+    transform: translateY(-5px);
+}
+
+.dessertImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.likeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.likeIcon svg {
+    font-size: 1.5rem;
+}
+
+.likeIcon:hover  {
+    color: red;
+}
+
+.noDesserts {
+    font-size: 1.5rem;
+    color: #888;
+}
+
+.dessertName {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.dessertPrice {
+    font-size: 1rem;
+    color: #555;
+}
+
+.cartButton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cartButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.cartButton.inCart {
+    background-color: #dc3545;
+}
+
+.cartButton.inCart:hover {
+    background-color: #a71d2a;
+}
+

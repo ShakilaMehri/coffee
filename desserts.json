@@ -1,0 +1,75 @@
+{
+    "desserts": [
+      {
+        "id": 1,
+        "name": "Chocolate Cake",
+        "price": "$5.99",
+        "image": "/images/dessert1.jfif",
+        "link": "/desserts/1"
+      },
+      {
+        "id": 2,
+        "name": "Chocolate Cake",
+        "price": "$5.99",
+        "image": "/images/dessert2.jfif",
+        "link": "/desserts/1"
+      },
+      {
+        "id": 3,
+        "name": "Tiramisu",
+        "price": "$4.99",
+        "image": "/images/dessert3.jfif",
+        "link": "/desserts/2"
+      },
+      {
+        "id": 4,
+        "name": "Tiramisu",
+        "price": "$4.99",
+        "image": "/images/dessert4.jfif",
+        "link": "/desserts/2"
+      },
+      {
+        "id": 5,
+        "name": "Cheesecake",
+        "price": "$6.99",
+        "image": "/images/dessert5.jfif",
+        "link": "/desserts/3"
+      },
+      {
+        "id": 6,
+        "name": "Cheesecake",
+        "price": "$6.99",
+        "image": "/images/dessert6.jfif",
+        "link": "/desserts/3"
+      },
+      {
+        "id": 7,
+        "name": "Macarons",
+        "price": "$3.49",
+        "image": "/images/dessert7.jfif",
+        "link": "/desserts/4"
+      },
+      {
+        "id": 8,
+        "name": "Macarons",
+        "price": "$3.49",
+        "image": "/images/dessert8.jfif",
+        "link": "/desserts/4"
+      },
+      {
+        "id": 9,
+        "name": "Panna Cotta",
+        "price": "$4.49",
+        "image": "/images/dessert9.jfif",
+        "link": "/desserts/5"
+      },
+      {
+        "id": 10,
+        "name": "Panna Cotta",
+        "price": "$4.49",
+        "image": "/images/dessert10.jfif",
+        "link": "/desserts/5"
+      }
+    ]
+  }
+  
