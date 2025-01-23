@@ -22,9 +22,17 @@
 
 .navList {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   list-style: none;
+
 }
+
+.navList.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .navList a{
   text-decoration: none;
@@ -61,12 +69,27 @@
   color: #ae8957;
 }
 
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1001;
+}
+
+.menuToggle:focus {
+  outline: none;
+}
+
+/* Hero Section */
+
 .hero {
   padding: 0 14px;
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(/images/bg.png);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -190,15 +213,19 @@
 }
 
 @media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
   .header {
     padding: 20px 5%;
     flex-direction: column;
     align-items: flex-start;
   }
   .navList {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
+    display: none;
+  }
+  .navList.active {
+    display: flex;
   }
   .navList a {
     margin: 10px 0;

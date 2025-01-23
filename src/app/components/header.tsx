@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/header.module.css";
 import { BiX } from "react-icons/bi";
+import { CiMenuBurger } from "react-icons/ci";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,19 +18,28 @@ const Header = () => {
     });
   }, []);
 
+  const toggleMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  }
+
   return (
     <>
       <header className={styles.header}>
         <a href="/" className={styles.logo}>
           <img src="/images/logo.png" alt="logo" />
         </a>
-        <ul
+        <button className={styles.menuToggle}
+        onClick={toggleMenu}
+        aria-label={isMobileMenuOpen ? "closeMenu" : "openMenu"} >
+          {isMobileMenuOpen ? <BiX /> : <CiMenuBurger/>}  
+        </button>
+        <ul 
           className={`${styles.navList}${
-            isMobileMenuOpen ? styles.showMobileMenu : ""
+            isMobileMenuOpen ? styles.active : ""
           }`}
         >
           <li>
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/coffee">Coffee</a>
@@ -49,12 +59,6 @@ const Header = () => {
           <a href="/signin" className={styles.navBtn}>
             Sign In
           </a>
-          <button
-            className={styles.mobileMenuBtn}
-            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <BiX /> : <CgScrollV />}
-          </button>
         </div>
       </header>
 
