@@ -1,0 +1,99 @@
+.coffeeSection {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f4ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coffeeHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coffeeHeader h2 {
+    font-size: 24px;
+    color: #6b4f4f;
+    margin-bottom: 10px;
+}
+
+.coffeeHeader p {
+    font-size: 16px;
+    color: #8b6a6a;
+}
+
+.coffeeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-size: 14px;
+    color: #6b4f4f;
+    margin-bottom: 5px;
+}
+
+.formGroup select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #d3c5c5;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.formGroup input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.orderButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6b4f4f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.orderButton:hover {
+    background-color: #8b6a6a;
+}
+
+@media (max-width: 768px) {
+    .coffeeSection {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .coffeeHeader h2 {
+        font-size: 20px;
+    }
+
+    .coffeeHeader p {
+        font-size: 14px;
+    }
+
+    .formGroup label {
+        font-size: 13px;
+    }
+
+    .formGroup select {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .orderButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
